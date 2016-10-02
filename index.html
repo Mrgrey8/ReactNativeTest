@@ -14,5 +14,13 @@
     <script src="lib/babel-browser.min.js"></script>
 
     <script src="app.jsx" type="text/babel"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+		$.get("http://google.com/", { "q": "query" },
+		   function(data){
+			 
+		   }, "json");
+	</script>
 </body>
 </html>

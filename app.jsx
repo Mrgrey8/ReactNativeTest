@@ -1,20 +1,19 @@
-function Hero(props) {
+function input(props) {
     return (
-        <div className="container">
+        /*<div className="container">
             <img src={props.imageUrl} />
             <h1>{props.title}</h1>
             <p>{props.subtitle}</p>
-        </div>
+        </div>*/
+		
+		<input type="{props.type}" value="{props.value}"/>
     );
 }
 
 ReactDOM.render(
-    <div>
-        <Hero title="React"
-            subtitle="Библиотека для создания пользовательских интерфейсов"
-            imageUrl="https://facebook.github.io/react/img/logo.svg" />
-        <Hero title="Angular 2"
-            subtitle="Один фреймворк"
-            imageUrl="https://angular.io/resources/images/logos/angular2/angular.svg" />
+    <div className="container">
+        <input type="text"/>
+        <input type="range"/>
+        <input type="submit" value="Search"/>
     </div>,
 document.getElementById('root'));
